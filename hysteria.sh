@@ -4,7 +4,7 @@ while true; do
 re='^[0-9]+$'
 read -p "give a free port : " port
 if [[ -z $port ]]; then
-  echo "you should give a free port, like 8956"
+  echo "you should give a free port, like 1234 (you can see your free port with command netstat)"
   elif ! [[ $port =~ $re ]] ; then
     echo "error: Not a number" >&2
   else
